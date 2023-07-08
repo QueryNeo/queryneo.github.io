@@ -3,7 +3,11 @@ $(function(){
     $("#footer").load("footer.html"); 
   });
 
-   //stolen from https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked 
+import * as src from "https://kit.fontawesome.com/98effb28b9.js";
+
+
+
+   //stolen from https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked, thank you so much 
   $(document).ready(function() {
     var audioElement = document.createElement('audio');
 
