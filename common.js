@@ -9,6 +9,7 @@ $(function(){
 
     if (audioPath != null){
     audioElement.setAttribute('src', audioPath);
+      if (audioSource == null){audioSource = "UNDEFINED"}
     
     audioElement.addEventListener('ended', function() { 
       this.play();
@@ -16,8 +17,9 @@ $(function(){
     
     audioElement.addEventListener("canplay",function(){
         $("#length").text("Duration:" + audioElement.duration + " seconds");
-        $("#source").text("Source:" + audioElement.src);
+        $("#source").text("Source: " + audioSource);
         $("#status").text("Status: Ready to play").css("color","green");
+        audioElement.play();
     });
     
     audioElement.addEventListener("timeupdate",function(){
