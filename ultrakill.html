@@ -4,6 +4,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>HELL IS FULL.</title>
+        <!-- jquery -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+        <script src="common.js"></script>
+        <!-- end scripting -->
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles_ultrakill.css">
@@ -14,9 +18,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     </head>
 
-    <body>
-        <audio id ="music" autoplay loop>
-            
+    <body onload="musicload()">
+        
+        <audio id ="music"loop>
+            <script>
+            function musicload(){
+                $('#music').play();
+            }
+            </script>
+
+
             <source src="music/ultrakill_menu.mp3" type="audio/mpeg">
             sorry, we cant audio :c
 
@@ -27,7 +38,7 @@
         </script>
 
         <!--MAIN-->
-        <div class = "body">
+        <div class = "strapline">
             <h1 class = "c">WHAT IS ULTRAKILL?</h1>
         </div>
         <br>
@@ -54,7 +65,7 @@
             </div>
         </div>
         <br>
-        <div class ="body t">
+        <div class ="strapline t">
             <h1 class = "c"><a href="index.html">TO INDEX!</a></h1>
         </div>
         <br>
