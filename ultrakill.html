@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- we boilerplating  -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>HELL IS FULL.</title>
-        <!-- jquery -->
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+        <!-- jquery and common importing -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script> 
+         audioPath = "/music/ultrakill_music.mp3";
+        </script>
         <script src="common.js"></script>
+        
         <!-- end scripting -->
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- we styling -->
         <link rel="stylesheet" href="styles_ultrakill.css">
+
+        <!-- we dataing -->
+        <meta name="description" content="ULTRA KILL!!!!!!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="images/icons/favicon_ultrakill.ico">
-        <!doctype html>
+
+        <!-- fonting -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet"> 
+        <!-- we done okay?! -->
     </head>
 
-    <body onload="musicload()">
-        
-        <audio id ="music"loop>
-            <script>
-            function musicload(){
-                $('#music').play();
-            }
-            </script>
+    <body>
+        <!-- stolen from https://stackoverflow.com/questions/8489710/play-an-audio-file-using-jquery-when-a-button-is-clicked -->
+
+        <div class = "music-box">
+            <h2>Sound Information</h2>
+            <div id="length">Duration:</div>
+            <div id="source">Source:</div>
+            <div id="status" style="color:red;">Status: Loading</div>
+            <hr>
+            <h2>Control Buttons</h2>
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="restart">Restart</button>
+            <hr>
+            <h2>Playing Information</h2>
+            <div id="currentTime">0</div>
+        </div>
+
+    
 
 
             <source src="music/ultrakill_menu.mp3" type="audio/mpeg">
             sorry, we cant audio :c
 
         </audio>
-        <script>
-            let mus = document.getElementById("music");
-            mus.volume = 0.3;
-        </script>
 
         <!--MAIN-->
         <div class = "strapline">
