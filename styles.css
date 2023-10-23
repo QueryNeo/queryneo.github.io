@@ -13,6 +13,7 @@ body {
 .c {
     text-align: center;
     flex: auto;
+    margin: 10px;
     /* flex-wrap: wrap; */
 
 }
@@ -39,19 +40,20 @@ h1{
   }
 
   .flex-container > div {
-    padding: inherit;
+    padding: 10px;
+    margin: 2px;
     height:auto;
     background-color: inherit;
-    margin: 10px;
     text-align:left;
     font-family: inherit;
     flex-wrap: inherit;
     flex-grow: 2;
     white-space: nowrap;
     border: #0a0e1b;
-    border-radius: 1vmin;
+    border-radius: 2vmin;
+  
     border-style:dashed;
-    margin: 10px;
+    
   }
   .flex-container > ul{
     text-align:start;
@@ -68,7 +70,7 @@ h1{
     padding: 10px;
     border: #3f5593;
     border-radius: 5px;
-    border-style: ridge;
+    border-style:groove;
   }
 
 
