@@ -7,7 +7,7 @@ body {
     border: 1vmin;
     border-style: solid;
     border-color: #161f38;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .c {
@@ -16,7 +16,7 @@ body {
     text-align: center;
     flex: auto;
     margin: 10px;
-    /* flex-wrap: wrap; */
+  flex-wrap: wrap; 
 
 }
 h1{
@@ -33,7 +33,6 @@ h1{
 
 .flex-container {
     display: flex;
-    width: 97.8%;
     height: flex;
     padding: 10px;
     align-items:start;
@@ -51,7 +50,6 @@ h1{
     font-family: inherit;
     flex-wrap: inherit;
     flex-grow: 2;
-    white-space: nowrap;
     border: #0a0e1b;
     border-radius: 2vmin;
   
@@ -67,6 +65,7 @@ h1{
   }
   .div-bottom{
     width: 100%;
+    flex-wrap: wrap;
 
   }
   .img-link{
